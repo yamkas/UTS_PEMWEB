@@ -1,7 +1,7 @@
 # Name
-Yamka Sudirman
-NIM 20210801250
-Teknik Informatika
+- Yamka Sudirman
+- NIM 20210801250
+- Teknik Informatika
 
 # Deployment 
 - Run docker-compose up -d --build wait for finish.
