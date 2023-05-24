@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'site_title' => 'Template',
+    'site_title' => '',
 
 ];

@@ -13,6 +13,7 @@
                         {{ session('message') }}
                     </div>
                 @endif
+                <img src="https://www.esaunggul.ac.id/wp-content/uploads/2012/07/logo-ke-bwh.jpg" alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
 
                 <form method="POST" action="{{ route('login') }}">
                     @csrf

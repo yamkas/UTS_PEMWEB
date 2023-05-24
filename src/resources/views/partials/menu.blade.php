@@ -79,6 +79,28 @@
                 </ul>
             </li>
         @endcan
+        @can('sample_access')
+            <li class="c-sidebar-nav-dropdown {{ request()->is("admin/books*") ? "c-show" : "" }}">
+                <a class="c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fa-fw fas fa-crown c-sidebar-nav-icon">
+
+                    </i>
+                    {{ trans('cruds.uts.title') }}
+                </a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    @can('book_access')
+                        <li class="c-sidebar-nav-item">
+                            <a href="{{ route("admin.books.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/books") || request()->is("admin/books/*") ? "c-active" : "" }}">
+                                <i class="fa-fw fas fa-book c-sidebar-nav-icon">
+
+                                </i>
+                                {{ trans('cruds.book.title') }}
+                            </a>
+                        </li>
+                    @endcan
+                </ul>
+            </li>
+        @endcan
         @if(file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php')))
             @can('profile_password_edit')
                 <li class="c-sidebar-nav-item">

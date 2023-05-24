@@ -87,5 +87,27 @@ return [
             'deleted_at_helper' => ' ',
         ],
     ],
+    'sample' => [
+        'title'          => 'Sample',
+        'title_singular' => 'Sample',
+    ],
+    'book' => [
+        'title'          => 'Book',
+        'title_singular' => 'Book',
+        'fields'         => [
+            'id'                => 'ID',
+            'id_helper'         => ' ',
+            'bookname'          => 'Bookname',
+            'bookname_helper'   => ' ',
+            'author'            => 'Author',
+            'author_helper'     => ' ',
+            'created_at'        => 'Created at',
+            'created_at_helper' => ' ',
+            'updated_at'        => 'Updated at',
+            'updated_at_helper' => ' ',
+            'deleted_at'        => 'Deleted at',
+            'deleted_at_helper' => ' ',
+        ],
+    ],
 
 ];

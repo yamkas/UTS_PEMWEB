@@ -60,16 +60,16 @@ class BookController extends Controller
 
     public function create()
     {
-        abort_if(Gate::denies('book_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('pembayaran_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return view('admin.books.create');
+        return view('admin.pembayarans.create');
     }
 
     public function store(StoreBookRequest $request)
     {
         $book = Book::create($request->all());
 
-        return redirect()->route('admin.books.index');
+        return redirect()->route('admin.pembayaran.index');
     }
 
     public function edit(Book $book)
